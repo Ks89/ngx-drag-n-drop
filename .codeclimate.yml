@@ -1,0 +1,57 @@
+engines:
+  eslint:
+    enabled: true
+    channel: eslint-5
+#  tslint:
+#    enabled: true
+#    config: tslint.json
+  fixme:
+    enabled: true
+    config:
+      strings:
+      - FIXME
+      - TODO
+      - BUG
+  csslint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - javascript
+  scss-lint:
+    enabled: true
+  shellcheck:
+    enabled: false
+ratings:
+  paths:
+  - libs/**
+  - "**.css"
+  - "**.scss"
+exclude_paths:
+- "@ks89"
+- "node_modules/"
+- ".circleci/"
+- ".github/"
+- "travisci/"
+- ".travis.yml"
+- "appveyor.yml"
+- ".sass-lint.yml"
+- ".editorconfig"
+- ".npmignore"
+- ".prettierignore"
+- ".prettierrc.json"
+- "Jenkinsfile"
+- "Jenkinsfile-local-macOS"
+- "sonar-project.properties"
+- "*.ngfactory.ts"
+- "*.ngsummary.json"
+- "examples/"
+- "apps/"
+- "docs/"
+- "coverage/"
+- ".scannerwork/"
+- "reports/"
+- "**/*.log"
+- "**/e2e/"
+- "**/*.spec.ts"

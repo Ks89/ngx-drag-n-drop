@@ -1,0 +1,7 @@
+<p>
+    drop-area works!
+</p>
+<div (dropEvent)="addDropItem($event)" (dropEventMouse)="alertMouseEvent($event)" [dropHighlight]="'highlight'" class="droppable"
+     dropDirective>
+    <app-generic-box *ngFor="let item of itemsDropped" [genericBox]='item' class="dropItem"></app-generic-box>
+</div>

@@ -1,0 +1,10 @@
+<!--The whole content below can be removed with the new code.-->
+<div class="row">
+    <h2>{{title}}</h2>
+    <div class="col-md-4">
+        <app-navigation-type-check [dropItemType]='dropItemType'></app-navigation-type-check>
+    </div>
+    <div class="col-md-8">
+        <app-drop-area-type-check (droppedItemType)="dropItemTypeCheck($event)"></app-drop-area-type-check>
+    </div>
+</div>

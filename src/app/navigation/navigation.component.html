@@ -1,0 +1,5 @@
+navigation works!
+<div (releaseDrop)="releaseDrop($event)" *ngFor="let item of itemsToDrop" [dragDirective]='item'
+     [dragHighlight]="'highlight'" class="dragItem">
+    <app-generic-box [genericBox]='item'></app-generic-box>
+</div>

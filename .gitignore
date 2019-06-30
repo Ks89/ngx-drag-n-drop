@@ -1,46 +1,64 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# Created by .ignore support plugin (hsz.mobi)
+### Node template
+# Logs
+logs
+*.log
+npm-debug.log*
 
-# compiled output
-/dist
-/tmp
-/out-tsc
-# Only exists if Bazel was run
-/bazel-out
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
 
-# dependencies
-/node_modules
+# Dependency directories
+node_modules
 
-# profiling files
-chrome-profiler-events.json
-speed-measure-plugin.json
+# Optional npm cache directory
+.npm
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# Optional eslint cache
+.eslintcache
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
+# Yarn Integrity file
+.yarn-integrity
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
+# IntelliJ
+.idea
 
-# System Files
+# dotenv environment variables file
+.env
+
+# System files
 .DS_Store
 Thumbs.db
+
+# Compiled files
+*.metadata.json
+*.ngfactory.ts
+*.ngsummary.json
+**/dist
+**/aot
+**/.awcache
+**/dll
+**/@ks89/
+
+# Docs
+docs/
+
+# Tests
+**/coverage/
+
+# SonarQube
+.scannerwork/
+reports/
+
+# Examples
+examples/systemjs/app/**/*.js
+examples/systemjs/app/**/*.map
+examples/angular-cli/dist/
+examples/angular-cli-6/dist/
+examples/angular-cli-material/dist/
+examples/universal/dist/
+examples/universal/out-tsc/
+

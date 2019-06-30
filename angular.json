@@ -119,6 +119,41 @@
           }
         }
       }
+    },
+    "@ks89/ngx-drag-n-drop": {
+      "projectType": "library",
+      "root": "projects/ks89/ngx-drag-n-drop",
+      "sourceRoot": "projects/ks89/ngx-drag-n-drop/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ks89/ngx-drag-n-drop/tsconfig.lib.json",
+            "project": "projects/ks89/ngx-drag-n-drop/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ks89/ngx-drag-n-drop/src/test.ts",
+            "tsConfig": "projects/ks89/ngx-drag-n-drop/tsconfig.spec.json",
+            "karmaConfig": "projects/ks89/ngx-drag-n-drop/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ks89/ngx-drag-n-drop/tsconfig.lib.json",
+              "projects/ks89/ngx-drag-n-drop/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ngx-drag-n-drop"
 }
