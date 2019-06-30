@@ -1,6 +1,6 @@
 {
   "name": "@ks89/ngx-drag-n-drop",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Drag and drop library for Angular >=8",
   "license": "MIT",
   "author": "Stefano Cappa",
@@ -11,14 +11,19 @@
   "sideEffect": true,
   "homepage": "https://github.com/Ks89/ngx-drag-n-drop",
   "peerDependencies": {
-    "@angular/common": "^8.0.1",
-    "@angular/core": "^8.0.1",
+    "@angular/common": ">=8.0.0",
+    "@angular/core": ">=8.0.0",
     "rxjs": ">=6.0.0"
   },
   "keywords": [
     "ngx-drag-n-drop",
     "ngx-dnd",
     "ngx-drag-and-drop",
+    "angular 4",
+    "angular 5",
+    "angular 6",
+    "angular 7",
+    "angular 8",
     "drag and drop",
     "drag n drop",
     "dnd",
