@@ -14,63 +14,6 @@ Every time you'll run `npm install` inside an example's folder, you must rebuild
 23. `npm test`
 24. `npm run e2e`
 
-# B. Run main angular-cli example
-1. `npm start` => if everything is ok (also in browser's console), kill the process and go to the next step
-3. `npm run build:main:dev`
-4. `cd dist/apps/main/ && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-5. `cd ../../..`
-6. `npm run build:main:prod`
-7. `cd dist/apps/main/ && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-8. `cd ../../..`
-
-# C. Run systemjs example
-1. `cd examples/systemjs`
-2. `npm start` => if everything is ok (also in browser's console), kill the process and go to the next step
-3. `cd ../..`
-
-# D. Run angular-cli example
-1. `cd examples/angular-cli`
-2. `npm start` => if everything is ok (also in browser's console), kill the process and go to the next step
-3. `npm run build:dev`
-4. `cd dist/angular-cli && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-5. `cd ../..`
-6. `npm run build:prod`
-7. `cd dist/angular-cli && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-8. `cd ../../../..`
-
-# E. Run angular-cli-6 example
-1. `cd examples/angular-cli-6`
-2. `npm start` => if everything is ok (also in browser's console), kill the process and go to the next step
-3. `npm run build:dev`
-4. `cd dist/angular-cli-6 && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-5. `cd ../..`
-6. `npm run build:prod`
-7. `cd dist/angular-cli-6 && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-8. `cd ../../../..`
-
-# F. Run universal example
-1. `cd examples/universal`
-2. `npm run start` => if everything is ok (also in browser's console), kill the process and go to the next step
-3. `npm run build:dev`
-4. `cd dist/browser && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-5. `cd ../..`
-6. `npm run build:prod`
-7. `cd dist/browser && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-8. `cd ../..`
-9. `npm run build:ssr && npm run serve:ssr` => if everything is ok (also in browser's console), kill the process and go to the next step
-10. `npm run build:prerender && npm run serve:prerender` => if everything is ok (also in browser's console), kill the process and go to the next step
-11. `cd ../..`
-
-# G. Run angular-cli-material example
-1. `cd examples/angular-cli-material`
-2. `npm start` => if everything is ok (also in browser's console), kill the process and go to the next step
-3. `npm run build:dev`
-4. `cd dist/angular-cli-material && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-5. `cd ../..`
-6. `npm run build:prod`
-7. `cd dist/angular-cli-material && lite-server` => if everything is ok (also in browser's console), kill the process and go to the next step
-8. `cd ../../../..`
-
 # H. Create your pull request
 1. **If it is ok, create your pull request specifying all the details**
 
@@ -80,27 +23,27 @@ Every time you'll run `npm install` inside an example's folder, you must rebuild
 # Only for the author @Ks89 - How to publish this on npm?
 
 ## Stable releases (@latest)
-1. `cd projects/ks89/angular-modal-gallery`
-2. `npm version patch` (x.x.1) or `npm version minor` (x.1.0) or `npm version major` (5.x.x)
+1. `cd projects/ks89/ngx-drag-n-drop`
+2. `npm version patch` (x.x.1) or `npm version minor` (x.1.0) or `npm version major` (1.x.x)
 3. `cd ../..`
 4. `npm run clean:all`
 5. `npm run build:lib`
-6. `npm publish @ks89/angular-modal-gallery`
+6. `npm publish @ks89/ngx-drag-n-drop`
 7. `git push origin master`
-8. `git push origin vx.x.x`  <-- tag name created by npm version (for instance v5.0.1)
+8. `git push origin vx.x.x`  <-- tag name created by npm version (for instance v1.0.1)
 
 ## Beta and RC releases (@beta)
-1. `cd projects/ks89/angular-modal-gallery`
-2. Manually change the version of `./libs/angular-modal-gallery/package.json` with either this format `x.x.x-beta.x` or `x.x.x-rc.x` (also respect semver!)
+1. `cd projects/ks89/ngx-drag-n-drop`
+2. Manually change the version of `./libs/ngx-drag-n-drop/package.json` with either this format `x.x.x-beta.x` or `x.x.x-rc.x` (also respect semver!)
 3. `cd ../..`
 4. `npm run clean:all`
 5. `npm run build:lib`
-6. `npm publish @ks89/angular-modal-gallery --tag beta`
+6. `npm publish @ks89/ngx-drag-n-drop --tag beta`
 
 ## Alpha releases (@next)
-1. `cd projects/ks89/angular-modal-gallery`
-2. Manually change the version of `./libs/angular-modal-gallery/package.json` with this format `x.x.x-alpha.x` (also respect semver!)
+1. `cd projects/ks89/ngx-drag-n-drop`
+2. Manually change the version of `./libs/ngx-drag-n-drop/package.json` with this format `x.x.x-alpha.x` (also respect semver!)
 3. `cd ../..`
 4. `npm run clean:all`
 5. `npm run build:lib`
-6. `npm publish @ks89/angular-modal-gallery --tag next`
+6. `npm publish @ks89/ngx-drag-n-drop --tag next`
