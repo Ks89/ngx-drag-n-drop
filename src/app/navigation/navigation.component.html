@@ -1,5 +1,5 @@
 navigation works!
-<div (releaseDrop)="releaseDrop($event)" *ngFor="let item of itemsToDrop" [dragDirective]='item'
+<div (releaseDrop)="releaseDrop($event)" *ngFor="let item of itemsToDrop" ksDragDirective [dragDirective]='item'
      [dragHighlight]="'highlight'" class="dragItem">
     <app-generic-box [genericBox]='item'></app-generic-box>
 </div>

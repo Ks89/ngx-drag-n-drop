@@ -4,11 +4,11 @@
 </p>
 <div (dragenterEvent)="dragEnter($event,typeCheck.Round)" (dragleaveEvent)="dragLeave()"
      (dropEvent)="addDropItem($event,typeCheck.Round)" [ngClass]="highlight[typeCheck.Round]" class="droppable round-hole"
-     dropDirective>
+     ksDropDirective>
     <app-generic-box *ngFor="let item of itemsDroppedRound" [genericBox]='item'></app-generic-box>
 </div>
 <div (dragenterEvent)="dragEnter($event,typeCheck.Square)" (dragleaveEvent)="dragLeave()"
      (dropEvent)="addDropItem($event,typeCheck.Square)" [ngClass]="highlight[typeCheck.Square]" class="droppable square-hole"
-     dropDirective>
+     ksDropDirective>
     <app-generic-box *ngFor="let item of itemsDroppedSquare" [genericBox]='item'></app-generic-box>
 </div>

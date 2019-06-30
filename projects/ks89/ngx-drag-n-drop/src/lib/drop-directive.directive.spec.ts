@@ -7,7 +7,7 @@ import { DragDropDirectiveService } from './drag-drop-directive.service';
 // test component to test highlighting
 @Component({
   template: `
-  <div dropDirective (dropEvent)="testEvent($event)" (dragenterEvent)="testEvent($event)" (dragenterEvent)="testEvent($event)" class="droppable" [dropHighlight]="'highlight'" >
+  <div ksDropDirective (dropEvent)="testEvent($event)" (dragenterEvent)="testEvent($event)" (dragenterEvent)="testEvent($event)" class="droppable" [dropHighlight]="'highlight'" >
     <span>{{item.name}}</span>
     <p>{{testMsg}}</p>
   </div>
@@ -21,7 +21,7 @@ class TestComponent {
   public testEvent(event): void {
     console.log(event);
     this.testMsg = event;
-    debugger;
+    // debugger;
   }
 }
 
@@ -46,7 +46,6 @@ describe('DropDirective', () => {
   const fakeEvent: FakeEvent = new FakeEvent();
   let fixture: ComponentFixture<TestComponent>;
   let itemDiv: DebugElement;
-  const itemName: DebugElement;
   let comp: TestComponent;
   let directInstance: DropDirective;
   let dragService: DragDropDirectiveService;

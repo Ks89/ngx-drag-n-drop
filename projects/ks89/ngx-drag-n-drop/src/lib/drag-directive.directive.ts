@@ -3,7 +3,7 @@ import { DragDropDirectiveService } from './drag-drop-directive.service';
 import { Subscription } from 'rxjs';
 
 @Directive({
-  selector: '[dragDirective]'
+  selector: '[ksDragDirective]'
 })
 export class DragDirective implements OnDestroy {
   @Input() dragDirective: any; // draggedItem

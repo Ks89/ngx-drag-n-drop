@@ -2,19 +2,14 @@ import { Directive, ElementRef, EventEmitter, HostListener, Input, Output } from
 import { DragDropDirectiveService } from './drag-drop-directive.service';
 
 @Directive({
-  selector: '[dropDirective]'
+  selector: '[ksDropDirective]'
 })
 export class DropDirective {
-  @Input()
-  dropHighlight: string;
-  @Output()
-  dropEvent: EventEmitter<any> = new EventEmitter();
-  @Output()
-  dragenterEvent: EventEmitter<any> = new EventEmitter();
-  @Output()
-  dragleaveEvent: EventEmitter<any> = new EventEmitter();
-  @Output()
-  dropEventMouse: EventEmitter<any> = new EventEmitter();
+  @Input() dropHighlight: string;
+  @Output() dropEvent: EventEmitter<any> = new EventEmitter();
+  @Output() dragenterEvent: EventEmitter<any> = new EventEmitter();
+  @Output() dragleaveEvent: EventEmitter<any> = new EventEmitter();
+  @Output() dropEventMouse: EventEmitter<any> = new EventEmitter();
 
   private highlighted = false;
   private dragItem: any;

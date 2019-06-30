@@ -8,7 +8,7 @@ import { Subject } from 'rxjs';
 // test component to test highlighting
 @Component({
   template: `
-      <div id="itemDiv" [dragDirective]='item' [dragHighlight]="'highlight'" (releaseDrop)="testEvent($event)"
+      <div id="itemDiv" ksDragDirective [dragDirective]='item' [dragHighlight]="'highlight'" (releaseDrop)="testEvent($event)"
            (startDrag)="testEvent($event)">
           <span id="itemName">{{item.name}}</span>
           <p>{{testMsg}}</p>
