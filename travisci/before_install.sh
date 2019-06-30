@@ -29,9 +29,9 @@ echo "Installing global dependencies"
 # install global dependencies
 if [[ $TRAVIS_OS_NAME = 'osx' ]]; then
     echo "Installing $TRAVIS_OS_NAME global dependencies"
-    sudo npm install -g @angular/cli@7.3.3
+    sudo npm install -g @angular/cli@8.0.4
 else
     echo "Installing $TRAVIS_OS_NAME global dependencies"
     # to fix a problem with nodejs 6 on linux
-    npm install -g @angular/cli@7.3.3
+    npm install -g @angular/cli@8.0.4
 fi

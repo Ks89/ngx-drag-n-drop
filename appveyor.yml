@@ -29,15 +29,12 @@ skip_commits:
      - .circleci/*
      - travisci/*
      - .travis.yml
-     - Jenkinsfile
-     - Jenkinsfile-local-macOS
      - .codeclimate.yml
      - .editorconfig
      - .prettierignore
      - .prettierrc.json
      - .sass-lint.yml
      - .snyk
-     - sonar-project.properties
 
 # Including commits affecting specific files (GitHub only). More details here: /docs/appveyor-yml
 #only_commits:
@@ -73,10 +70,6 @@ environment:
   NODE_ENV: test
   CI: yes
   APPVEYOR: yes
-  CC_TEST_REPORTER_ID:
-    secure: 599YTB1w26VDxTafTrBNso5CW8BnztpspX2ajIcowkhI249QaKE+nOjN7oQSN1MMm9k7ekutSCpU185qsG4yvVpg4prdOQUs+VkNtLQgz9s=
-  COVERALLS_REPO_TOKEN:
-    secure: Edx2E7hPwjoxiEWq2pHhd7iugZKunJrlX/OVlja2dOjGwXe6/QNgJ1lrEdeEFDwB
 
 # this is how to allow failing jobs in the matrix
 matrix:
@@ -101,7 +94,7 @@ install:
   - cmd: appveyor-retry powershell Install-Product node $env:nodejs_version
   - npm install -g npm@6.8.0
   - set PATH=%APPDATA%\npm;%PATH%
-  - npm install -g @angular/cli@7.3.3
+  - npm install -g @angular/cli@8.0.4
   - npm ci
   # rebuild again node-sass
   - npm rebuild node-sass --force
@@ -133,18 +126,6 @@ build_script:
   - ps: "npm --version # PowerShell" # Pass comment to PS for easier debugging
   # prepare
   - npm run clean:all
-  - cd examples/systemjs
-  - npm ci
-  - cd ../..
-  - cd examples/angular-cli
-  - npm ci
-  - cd ../..
-  - cd examples/angular-cli-material
-  - npm ci
-  - cd ../..
-  - cd examples/universal
-  - npm ci
-  - cd ../..
   # build
   - npm run build:all
   # Note: unit testing and e2e testing scripts are below in "test_script"
@@ -152,29 +133,6 @@ build_script:
   # build main angular-cli with ng-packagr
   - npm run build:main:dev
   - npm run build:main:prod
-  # build official angular-cli example
-  - cd examples/angular-cli
-  - npm run build:dev
-  - npm run build:prod
-  - cd ../..
-  - # build official angular-cli-6 example
-  - cd examples/angular-cli-6
-  - npm run build:dev
-  - npm run build:prod
-  - cd ../..
-  # build official angular-cli-material example
-  - cd examples/angular-cli-material
-  - npm run build:dev
-  - npm run build:prod
-  - cd ../..
-  # build official universal example
-  - cd examples/universal
-  - npm run build:dev
-  - npm run build:prod
-  - npm run build:ssr
-  - npm run build:prerender
-  - cd ../..
-
 
 #---------------------------------#
 #       tests configuration       #
@@ -191,9 +149,9 @@ test_script:
   - node --version && npm --version
   - ps: "npm --version # PowerShell" # Pass comment to PS for easier debugging
   # init codeclimate test reporter
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
+#  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+#  - chmod +x ./cc-test-reporter
+#  - ./cc-test-reporter before-build
   # run tests
   - npm run test:ci
   # run e2e tests
@@ -227,12 +185,12 @@ deploy_script:
 #---------------------------------#
 
 # on successful build
-on_success:
-  - npm run docs:typedoc
-  # TODO restore compodoc - why on appveyor isn't working???
-#  - npm run docs:compodoc
-  # publish test results on codeclimate
-  - cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+#on_success:
+#  - npm run docs:typedoc
+#  # TODO restore compodoc - why on appveyor isn't working???
+##  - npm run docs:compodoc
+#  # publish test results on codeclimate
+#  - cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
 # on build failure
 #on_failure:

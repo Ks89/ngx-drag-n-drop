@@ -32,8 +32,6 @@ If your problem is still present, fell free to open an issue with this template.
 <!--
 For bug reports please provide the *STEPS TO REPRODUCE* and a *MINIMAL LIVE DEMO* of the problem on StackBlitz.com or plnkr.co...-->
 
-My official live example on StackBlitz (based on https://stackblitz.com/edit/angular-modal-gallery-v7) is: <!-- add your public link here -->
-
 
 ## What is the motivation / use case for changing the behavior?
 <!-- Describe the motivation or the concrete use case. -->
@@ -42,16 +40,16 @@ My official live example on StackBlitz (based on https://stackblitz.com/edit/ang
 ## Environment (the most important section to fill very carefully)
 
 <pre><code>
-- @ks89/angular-modal-gallery version: X.X.X
+- @ks89/ngx-drag-n-drop version: X.X.X
 - Node version: X.X.X  <!-- run `node --version` -->
 - npm version: X.X.X  <!-- run `npm --version` -->
 - Operating System and version:  <!-- Mac, Linux, Windows -->
 - Angular version: X.Y.Z <!-- check your package.json -->
-- angular-cli version (or SystemJS/Webpack): X.Y.Z <!-- for angular-cli run `ng -v` otherwise check your package.json-->
+- angular-cli version: X.Y.Z <!-- for angular-cli run `ng version` otherwise check your package.json-->
 - I'm using Server Side Rendering with angular-universal: YES/NO
 - I'm compiling with mode: DEBUG / PROD / PROD with AOT
 
-<!-- Check whether this is still an issue in the most recent angular-modal-gallery version -->
+<!-- Check whether this is still an issue in the most recent ngx-drag-n-drop version -->
 
 Browser:
 - [ ] Chrome (desktop) version XX

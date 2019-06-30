@@ -39,8 +39,6 @@ Thumbs.db
 *.ngsummary.json
 **/dist
 **/aot
-**/.awcache
-**/dll
 **/@ks89/
 
 # Docs
@@ -48,17 +46,3 @@ docs/
 
 # Tests
 **/coverage/
-
-# SonarQube
-.scannerwork/
-reports/
-
-# Examples
-examples/systemjs/app/**/*.js
-examples/systemjs/app/**/*.map
-examples/angular-cli/dist/
-examples/angular-cli-6/dist/
-examples/angular-cli-material/dist/
-examples/universal/dist/
-examples/universal/out-tsc/
-
