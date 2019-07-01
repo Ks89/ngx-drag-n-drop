@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { TypeCheckEnum } from '../type-check-enum';
+import { DragTypePayload } from '../../drag-payload';
 
 @Component({
   selector: 'app-navigation-type-check',
@@ -7,10 +8,9 @@ import { TypeCheckEnum } from '../type-check-enum';
   styleUrls: ['./navigation-type-check.component.scss']
 })
 export class NavigationTypeCheckComponent {
-  @Input()
-  dropItemType: any;
-  private pegType = TypeCheckEnum;
-  itemsToDrop: Array<any> = [
+  @Input() dropItemType: TypeCheckEnum;
+
+  itemsToDrop: DragTypePayload[] = [
     {
       name: 'Round Peg ',
       content: 'description 1',
@@ -23,12 +23,8 @@ export class NavigationTypeCheckComponent {
     }
   ];
 
-  constructor() {
-  }
-
-
   releaseDrop(event) {
-    const index = this.itemsToDrop.indexOf(event);
+    const index: number = this.itemsToDrop.indexOf(event);
     if (index >= 0) {
       setTimeout(() => {
         this.checkType(event, index);
@@ -36,14 +32,13 @@ export class NavigationTypeCheckComponent {
     }
   }
 
+  startDrag(item) {
+    console.log('Begining to drag item: ' + item);
+  }
+
   private checkType(event, index) {
     if (event.type === this.dropItemType) {
       this.itemsToDrop.splice(index, 1);
     }
   }
-
-  startDrag(item) {
-    console.log('Begining to drag item: ' + item);
-  }
-
 }

@@ -1,18 +1,17 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
+
+import { TypeCheckEnum } from './type-check-enum';
 
 @Injectable()
 export class TypeCheckService {
-  private dropTypeItem = new Subject<any>();
+  private dropTypeItem: Subject<TypeCheckEnum> = new Subject<TypeCheckEnum>();
 
-  constructor() {
-  }
-
-  public setDropTypeItem(item) {
+  setDropTypeItem(item: TypeCheckEnum) {
     this.dropTypeItem.next(item);
   }
 
-  public getDropTypeItem() {
+  getDropTypeItem(): Observable<TypeCheckEnum> {
     return this.dropTypeItem.asObservable();
   }
 }

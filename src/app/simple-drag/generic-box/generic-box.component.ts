@@ -14,7 +14,7 @@ export class GenericBoxComponent implements OnInit {
       this.genericBox = {
         name: 'Generic Box 1',
         content: 'Generic Box 1 Content'
-      };
+      } as DragPayload;
     }
   }
 }

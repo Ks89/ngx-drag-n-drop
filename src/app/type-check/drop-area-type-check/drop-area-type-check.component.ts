@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { TypeCheckEnum } from '../type-check-enum';
 
-import { DragPayload } from '../../drag-payload';
+import { DragTypePayload } from '../../drag-payload';
 
 @Component({
   selector: 'app-drop-area-type-check',
@@ -9,10 +9,10 @@ import { DragPayload } from '../../drag-payload';
   styleUrls: ['./drop-area-type-check.component.scss']
 })
 export class DropAreaTypeCheckComponent {
-  @Output()
-  droppedItemType: EventEmitter<any> = new EventEmitter();
-  itemsDroppedRound: DragPayload[] = [];
-  itemsDroppedSquare: DragPayload[] = [];
+  @Output() droppedItemType: EventEmitter<TypeCheckEnum> = new EventEmitter<TypeCheckEnum>();
+
+  itemsDroppedRound: DragTypePayload[] = [];
+  itemsDroppedSquare: DragTypePayload[] = [];
   warningMessage = '';
   highlight: string[] = ['', ''];
   typeCheck = TypeCheckEnum;
