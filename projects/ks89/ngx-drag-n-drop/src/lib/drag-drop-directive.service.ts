@@ -3,7 +3,7 @@ import { Subject } from 'rxjs';
 
 @Injectable()
 export class DragDropDirectiveService {
-  private dropItem = new Subject<any>();
+  private dropItem: Subject<any> = new Subject<any>();
   private draggedItem: any;
 
   constructor() {

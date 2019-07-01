@@ -1,4 +1,5 @@
-import { Directive, ElementRef, EventEmitter, HostListener, Input, Output } from '@angular/core';
+import { Directive, ElementRef, EventEmitter, HostListener, Input, Output, Renderer2 } from '@angular/core';
+
 import { DragDropDirectiveService } from './drag-drop-directive.service';
 
 @Directive({
@@ -6,6 +7,7 @@ import { DragDropDirectiveService } from './drag-drop-directive.service';
 })
 export class DropDirective {
   @Input() dropHighlight: string;
+
   @Output() dropEvent: EventEmitter<any> = new EventEmitter();
   @Output() dragenterEvent: EventEmitter<any> = new EventEmitter();
   @Output() dragleaveEvent: EventEmitter<any> = new EventEmitter();
@@ -15,6 +17,7 @@ export class DropDirective {
   private dragItem: any;
 
   constructor(
+    private renderer: Renderer2,
     private el: ElementRef,
     private dragDropDirectiveService: DragDropDirectiveService
   ) {
@@ -43,13 +46,12 @@ export class DropDirective {
     const eventData: any = event.dataTransfer.getData('text');
     if (eventData && event.dataTransfer.files.length === 0) {
       event.preventDefault();
-      // since html draggable will not tranfser an object, we need to parse are string
+      // since html draggable will not transfer an object, we need to parse are string
       const transferredObjectString: any = JSON.parse(eventData);
       const transferredObjectID: any = transferredObjectString.id;
       const transferredObject: any = transferredObjectString.object;
       this.dropEvent.emit(transferredObject);
       this.dragDropDirectiveService.setDropItem(transferredObjectID);
-
     }
     this.dropEventMouse.emit(event);
     this.highlight();
@@ -58,9 +60,9 @@ export class DropDirective {
   private highlight() {
     if (this.dropHighlight) {
       if (!this.highlighted) {
-        this.el.nativeElement.classList.add(this.dropHighlight);
+        this.renderer.addClass(this.el.nativeElement, this.dropHighlight);
       } else {
-        this.el.nativeElement.classList.remove(this.dropHighlight);
+        this.renderer.removeClass(this.el.nativeElement, this.dropHighlight);
       }
     }
     this.highlighted = !this.highlighted;

@@ -3,7 +3,7 @@
 <h3 align="center"><b>@ks89/ngx-drag-n-drop</b> is an Angular library to add drag and drop features</h3>
 <br>
 <p align="center">
-Based on https://bitbucket.org/IpponMattRitter/angular4-drag-drop/src/master/, but with support for Angular >=8 and other improvements.
+Based on https://bitbucket.org/IpponMattRitter/@ks89/ngx-drag-n-drop/src/master/, but with support for Angular >=8 and other improvements.
 </p>
 
 <br>
@@ -60,9 +60,10 @@ Based on https://bitbucket.org/IpponMattRitter/angular4-drag-drop/src/master/, b
 1. **[Features](#boom-features-boom)**
 2. **[Installation](#package-installation-package)**
 3. **[Choose the version](#warning-choose-the-version-warning)**
-4. **[News](#fire-news-fire)**
-5. **[Contributing](#computer-contributing-computer)**
-6. **[License](#copyright-license-copyright)**
+4. **[Usage](#usage)**
+5. **[News](#fire-news-fire)**
+6. **[Contributing](#computer-contributing-computer)**
+7. **[License](#copyright-license-copyright)**
 
 <br>
 
@@ -95,6 +96,51 @@ Based on https://bitbucket.org/IpponMattRitter/angular4-drag-drop/src/master/, b
 | Angular 8  | &gt;= 1.0.0                 |
 
 <br>
+
+
+## Usage
+To import the module into a module in which you wish to use the directive on components.
+```
+import { DragDropDirectiveModule} from "@ks89/ngx-drag-n-drop";
+
+```
+This module exports two attribute directives, 'DragDirective' and 'DropDirective'.  DragDirectve is used with a component from which you want to drag items, while DropDirective is used with the component in which you wish to drop items.  
+
+Both accept inputs for CSS class highlighting. If you do not pass a string then highlighting will be ignored.  Both will emit the dragged item when it is dropped in the 'DroppableDirective' component or element.
+
+'DragDirective' emits an event when dragging is started.
+
+'DropDirective' emits events when a drag enters a drop element, leaves a drop element, and as stated above when an element is dropped.
+
+### DragDirective
+```typescript
+<div *ngFor="let item of itemsToDrop" [draggedItem]='item' [dragHightlight]="'highlight'" (releaseDrop)="releaseDrop($event)" (startDrag)="startDrag(item)">
+</div>
+```
+'[draggedItem]="item"' Applies the drag directive, and passes it an item.
+
+'[dragHighlight]="'highlight'"' Passes a string to add a css class to the css class list of the element.
+
+'(releaseDrop)="releaseDrop($event)"' Calls a function to act on the dragged item once it is dropped into the drop area.
+
+'(startDrag)="startDrag(item)" Calls a function when the user starts dragging the item. 
+
+### DropDirectve
+```typescript
+<div dropDirective (dropEvent)="addDropItem($event)" (dropEventMouse)="dropEventMouse($event) (dragenterEvent)="dragEnter($event)" (dragleaveEvent)="dragLeave()" class="droppable" [dropHighlight]="'highlight'" >
+</div>
+```
+'dropDirective' applies the directive to an element, making it a drop target.
+'[dropHighlight]="'highlight'"' passes a string to add a css class to the css class list of the element.  
+
+'(dropEvent)="addDropItem($event)"' calls a function and passes the dropped item when an item is dropped into the drop element.
+
+'(dropEventMouse)="dropEventMouse($event)"'.  dropEventMouse is emitting the html drop event. From this you can get x,y cordinates of the drop etc.  If you wish you can use this to get the dropped item as well: let droppedObject = JSON.parse(event.dataTransfer.getData('text')).  
+
+'(dragenterEvent)="dragEnter($event)"' calls a function and passes the dragged item when an item is dragged into the drop element.
+
+'(dragleaveEvent)="dragLeave($event)"' calls a function and passes the dragged item when the item is dragged out of the drop element.
+
 
 ## :fire: News :fire:
 

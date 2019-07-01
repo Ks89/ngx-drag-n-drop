@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { GenericBoxModule } from '../generic-box/generic-box.module';
+import { GenericBoxModule } from '../simple-drag/generic-box/generic-box.module';
 import { DragDropDirectiveModule } from '@ks89/ngx-drag-n-drop';
 import { TypeCheckComponent } from './type-check.component';
 import { DropAreaTypeCheckComponent } from './drop-area-type-check/drop-area-type-check.component';

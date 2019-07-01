@@ -4,7 +4,7 @@ import { TypeCheckEnum } from '../type-check-enum';
 @Component({
   selector: 'app-navigation-type-check',
   templateUrl: './navigation-type-check.component.html',
-  styleUrls: ['./navigation-type-check.component.css']
+  styleUrls: ['./navigation-type-check.component.scss']
 })
 export class NavigationTypeCheckComponent {
   @Input()

@@ -1,4 +1,4 @@
-import { Directive, ElementRef, EventEmitter, HostListener, Input, OnDestroy, Output } from '@angular/core';
+import { Directive, ElementRef, EventEmitter, HostListener, Input, OnDestroy, Output, Renderer2 } from '@angular/core';
 import { DragDropDirectiveService } from './drag-drop-directive.service';
 import { Subscription } from 'rxjs';
 
@@ -6,7 +6,7 @@ import { Subscription } from 'rxjs';
   selector: '[ksDragDirective]'
 })
 export class DragDirective implements OnDestroy {
-  @Input() dragDirective: any; // draggedItem
+  @Input() draggedItem: any;
   @Input() dragHighlight: string; // cssHighlight
   @Output() releaseDrop: EventEmitter<any> = new EventEmitter();
   @Output() startDrag: EventEmitter<any> = new EventEmitter();
@@ -15,10 +15,11 @@ export class DragDirective implements OnDestroy {
   private dropSubscription: Subscription;
 
   constructor(
+    private renderer: Renderer2,
     private el: ElementRef,
     private dragDropDirectiveService: DragDropDirectiveService
   ) {
-    this.el.nativeElement.draggable = 'true';
+    this.renderer.setAttribute(this.el.nativeElement, 'draggable', 'true');
   }
 
   @HostListener('mouseenter') onMouseEnter() {
@@ -31,16 +32,16 @@ export class DragDirective implements OnDestroy {
 
   @HostListener('dragstart', ['$event']) onDragStart(event: any) {
     // html draggable will not transfer an object, so we stringify it
-    const transferObject = {object: this.dragDirective, id: 'dragDirectiveID-' + new Date().getTime()};
+    const transferObject = {object: this.draggedItem, id: 'dragDirectiveID-' + new Date().getTime()};
     const transferObjectString = JSON.stringify(transferObject);
     event.dataTransfer.setData('text', transferObjectString);
-    this.dragDropDirectiveService.setDragItem(this.dragDirective);
+    this.dragDropDirectiveService.setDragItem(this.draggedItem);
     this.dropSubscription = this.dragDropDirectiveService.getDropItem().subscribe(
       item => {
-        this.emitDraggedItem(this.dragDirective);
+        this.emitDraggedItem(this.draggedItem);
       }
     );
-    this.startDrag.emit(this.dragDirective);
+    this.startDrag.emit(this.draggedItem);
   }
 
   @HostListener('dragend') onDragEnd() {
@@ -63,9 +64,9 @@ export class DragDirective implements OnDestroy {
   private highlight() {
     if (this.dragHighlight) {
       if (!this.highlighted) {
-        this.el.nativeElement.classList.add(this.dragHighlight);
+        this.renderer.addClass(this.el.nativeElement, this.dragHighlight);
       } else {
-        this.el.nativeElement.classList.remove(this.dragHighlight);
+        this.renderer.removeClass(this.el.nativeElement, this.dragHighlight);
       }
     }
     this.highlighted = !this.highlighted;

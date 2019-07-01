@@ -2,14 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TypeCheckComponent } from './type-check/type-check.component';
 import { SimpleDragComponent } from './simple-drag/simple-drag.component';
-import { RoutingTestComponent } from './routing-check/routing-test.component';
 
 const appRoutes: Routes = [
-
-  {
-    path: 'routingcheck',
-    component: RoutingTestComponent
-  },
   {
     path: 'simpledrag',
     component: SimpleDragComponent
