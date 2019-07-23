@@ -1,7 +1,7 @@
 {
   "name": "@ks89/ngx-drag-n-drop",
   "version": "1.0.0",
-  "description": "Drag-n-Drop library for Angular >=7",
+  "description": "Drag-n-Drop library for Angular >=8",
   "license": "MIT",
   "author": "Stefano Cappa",
   "homepage": "https://github.com/Ks89",
@@ -10,8 +10,8 @@
     "url": "git+https://github.com/Ks89/ngx-drag-n-drop.git"
   },
   "engines": {
-    "node": ">=10.11.3",
-    "npm": ">=6.4.1"
+    "node": ">=10.16.0",
+    "npm": ">=6.9.0"
   },
   "scripts": {
     "ng": "ng",
