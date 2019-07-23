@@ -6,19 +6,11 @@ import { AppComponent } from './app.component';
 import { GenericBoxModule } from './simple-drag/generic-box/generic-box.module';
 import { TypeCheckModule } from './type-check/type-check.module';
 import { SimpleDragModule } from './simple-drag/simple-drag.module';
+import { DragIntoInputComponent } from './drag-into-input/drag-into-input.component';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    GenericBoxModule,
-    DragDropDirectiveModule,
-    TypeCheckModule,
-    SimpleDragModule,
-    AppRoutingModule
-  ],
-  declarations: [
-    AppComponent
-  ],
+  imports: [BrowserModule, GenericBoxModule, DragDropDirectiveModule, TypeCheckModule, SimpleDragModule, AppRoutingModule],
+  declarations: [AppComponent, DragIntoInputComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

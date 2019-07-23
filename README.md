@@ -87,7 +87,7 @@ Based on https://bitbucket.org/IpponMattRitter/@ks89/ngx-drag-n-drop/src/master/
 
 |            | @ks89/ngx-drag-n-drop |
 | ---------- | :---:                       |
-| AngularJS  | NOT OFFICIALLY SUPPORTED    |
+| AngularJS  | NOT WORKING                 |
 | Angular 2  | NOT OFFICIALLY SUPPORTED    |
 | Angular 4  | NOT OFFICIALLY SUPPORTED    |
 | Angular 5  | NOT OFFICIALLY SUPPORTED    |
@@ -114,7 +114,7 @@ Both accept inputs for CSS class highlighting. If you do not pass a string then 
 
 ### DragDirective
 ```typescript
-<div *ngFor="let item of itemsToDrop" [draggedItem]='item' [dragHightlight]="'highlight'" (releaseDrop)="releaseDrop($event)" (startDrag)="startDrag(item)">
+<div *ngFor="let item of itemsToDrop" ksDragDirective [draggedItem]='item' [dragHightlight]="'highlight'" (releaseDrop)="releaseDrop($event)" (startDrag)="startDrag(item)">
 </div>
 ```
 '[draggedItem]="item"' Applies the drag directive, and passes it an item.
@@ -127,10 +127,10 @@ Both accept inputs for CSS class highlighting. If you do not pass a string then 
 
 ### DropDirectve
 ```typescript
-<div dropDirective (dropEvent)="addDropItem($event)" (dropEventMouse)="dropEventMouse($event) (dragenterEvent)="dragEnter($event)" (dragleaveEvent)="dragLeave()" class="droppable" [dropHighlight]="'highlight'" >
+<div ksDropDirective (dropEvent)="addDropItem($event)" (dropEventMouse)="dropEventMouse($event) (dragenterEvent)="dragEnter($event)" (dragleaveEvent)="dragLeave()" class="droppable" [dropHighlight]="'highlight'" >
 </div>
 ```
-'dropDirective' applies the directive to an element, making it a drop target.
+'ksDropDirective' applies the directive to an element, making it a drop target.
 '[dropHighlight]="'highlight'"' passes a string to add a css class to the css class list of the element.  
 
 '(dropEvent)="addDropItem($event)"' calls a function and passes the dropped item when an item is dropped into the drop element.

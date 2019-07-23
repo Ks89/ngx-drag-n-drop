@@ -1,0 +1,30 @@
+.draggable {
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  width: 150px;
+  height: 20px;
+  cursor: move;
+  margin: 30px;
+  padding: 5px;
+  user-select: none;
+  text-align: center;
+}
+
+.drag-input {
+  background-color: #5600ff;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  width: 150px;
+  height: 20px;
+  margin: 30px;
+  padding: 5px;
+  text-align: center;
+
+  &::placeholder {
+    color: white;
+    opacity: .7;
+  }
+}
+
