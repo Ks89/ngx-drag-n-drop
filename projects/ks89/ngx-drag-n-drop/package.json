@@ -1,7 +1,7 @@
 {
   "name": "@ks89/ngx-drag-n-drop",
   "version": "1.0.1",
-  "description": "Drag and drop library for Angular >=8",
+  "description": "Drag and drop library for Angular >=7",
   "license": "MIT",
   "author": "Stefano Cappa",
   "engines": {
