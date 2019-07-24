@@ -92,7 +92,7 @@ Based on https://bitbucket.org/IpponMattRitter/@ks89/ngx-drag-n-drop/src/master/
 | Angular 4  | NOT OFFICIALLY SUPPORTED    |
 | Angular 5  | NOT OFFICIALLY SUPPORTED    |
 | Angular 6  | NOT OFFICIALLY SUPPORTED    |
-| Angular 7  | NOT OFFICIALLY SUPPORTED    |
+| Angular 7  | &gt;= 1.0.0    |
 | Angular 8  | &gt;= 1.0.0                 |
 
 <br>
