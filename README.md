@@ -25,23 +25,12 @@ Based on https://bitbucket.org/IpponMattRitter/@ks89/ngx-drag-n-drop/src/master/
   <a href="https://www.npmjs.com/package/@ks89/ngx-drag-n-drop"><img src="https://img.shields.io/npm/dy/@ks89/ngx-drag-n-drop.svg?style=flat-square" alt="Downloads/year"></a>
 </p>
 <p align="center">
-  <a href="https://travis-ci.org/Ks89/ngx-drag-n-drop"><img src="https://travis-ci.org/Ks89/ngx-drag-n-drop.svg?branch=master" alt=""></a>
-  <a href="https://ci.appveyor.com/project/Ks89/ngx-drag-n-drop/branch/master"><img src="https://ci.appveyor.com/api/projects/status/ikp5qqr9aci2s0ae/branch/master?svg=true" alt=""></a>
-  <a href="https://circleci.com/gh/Ks89/ngx-drag-n-drop"><img src="https://circleci.com/gh/Ks89/ngx-drag-n-drop.svg?style=svg" alt=""></a>
-</p>
-<p align="center">
   <a href="https://snyk.io/test/github/ks89/ngx-drag-n-drop"><img src="https://snyk.io/test/github/ks89/ngx-drag-n-drop/badge.svg" alt="Known Vulnerabilities"></a>
   <a href="https://david-dm.org/Ks89/ngx-drag-n-drop"><img src="https://david-dm.org/Ks89/ngx-drag-n-drop.svg" alt="david-dm Dependencies"></a>
-  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2FKs89%2Fngx-drag-n-drop?ref=badge_shield"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2FKs89%2Fngx-drag-n-drop.svg?type=shield" alt="FOSSA Status"></a>
   <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="code style: prettier"></a>
 </p>
 <p align="center">
-  <a href="https://codeclimate.com/github/Ks89/ngx-drag-n-drop"><img src="https://codeclimate.com/github/Ks89/ngx-drag-n-drop/badges/gpa.svg" alt="Code Climate"></a>
-  <a href="https://codeclimate.com/github/Ks89/ngx-drag-n-drop/coverage"><img src="https://codeclimate.com/github/Ks89/ngx-drag-n-drop/badges/coverage.svg" alt="ode Climate Coverage"></a>
-  <a href="https://coveralls.io/github/Ks89/ngx-drag-n-drop?branch=master"><img src="https://coveralls.io/repos/github/Ks89/ngx-drag-n-drop/badge.svg?branch=master" alt="Coveralls Coverage"></a>
-</p>
-<p align="center">
-  <a href="https://stackblitz.com/edit/ngx-drag-n-drop-v7"><img src="https://img.shields.io/badge/stackblitz-available-orange.svg" alt="Stackblitz"></a>
+  <a href="https://stackblitz.com/edit/ngx-drag-n-drop"><img src="https://img.shields.io/badge/stackblitz-available-orange.svg" alt="Stackblitz"></a>
   <a href="https://www.npmjs.com/package/@ks89/ngx-drag-n-drop"><img src="https://img.shields.io/badge/angular--style--guide-compliant-brightgreen.svg" alt="AngularStyleGuide"></a>
 </p>
 <p align="center">
@@ -144,7 +133,7 @@ Both accept inputs for CSS class highlighting. If you do not pass a string then 
 
 ## :fire: News :fire:
 
-- 07/??/2019 - 1.0.0 - @ks89/ngx-drag-n-drop - [HERE](https://github.com/Ks89/ngx-drag-n-drop/releases)
+- 07/24/2019 - 1.0.0 - @ks89/ngx-drag-n-drop - [HERE](https://github.com/Ks89/ngx-drag-n-drop/releases)
 
 <br>
 
