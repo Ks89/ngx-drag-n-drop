@@ -3,7 +3,7 @@
 <h3 align="center"><b>@ks89/ngx-drag-n-drop</b> is an Angular library to add drag and drop features</h3>
 <br>
 <p align="center">
-Based on https://bitbucket.org/IpponMattRitter/@ks89/ngx-drag-n-drop/src/master/, but with support for Angular >=8 and other improvements.
+Based on https://bitbucket.org/IpponMattRitter/@ks89/ngx-drag-n-drop/src/master/, but with support for Angular >=7 and other improvements.
 </p>
 
 <br>
