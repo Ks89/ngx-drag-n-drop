@@ -83,7 +83,9 @@
 | Angular 6  | NOT OFFICIALLY SUPPORTED    |
 | Angular 7  | &gt;= 1.0.0                 |
 | Angular 8  | &gt;= 1.0.0                 |
-| Angular 9  | &gt;= 2.0.0                 |
+| Angular 9  | &gt;= 2.0.0 (IMPORTANT)*    |
+
+*Please note that this library from version 2.0.0 requires angular 9 with IVY enabled!*
 
 <br>
 
