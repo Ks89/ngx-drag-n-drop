@@ -1,6 +1,6 @@
 {
   "name": "@ks89/ngx-drag-n-drop",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Drag-n-Drop library for Angular >=7",
   "license": "MIT",
   "author": "Stefano Cappa",
@@ -10,7 +10,7 @@
     "url": "git+https://github.com/Ks89/ngx-drag-n-drop.git"
   },
   "engines": {
-    "node": ">=10.16.0",
+    "node": ">=12.15.0",
     "npm": ">=6.9.0"
   },
   "scripts": {
@@ -64,29 +64,29 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^8.2.14",
-    "@angular/common": "^8.2.14",
-    "@angular/compiler": "^8.2.14",
-    "@angular/core": "^8.2.14",
-    "@angular/forms": "^8.2.14",
-    "@angular/platform-browser": "^8.2.14",
-    "@angular/platform-browser-dynamic": "^8.2.14",
-    "@angular/router": "^8.2.14",
+    "@angular/animations": "^9.0.1",
+    "@angular/common": "^9.0.1",
+    "@angular/compiler": "^9.0.1",
+    "@angular/core": "^9.0.1",
+    "@angular/forms": "^9.0.1",
+    "@angular/platform-browser": "^9.0.1",
+    "@angular/platform-browser-dynamic": "^9.0.1",
+    "@angular/router": "^9.0.1",
     "rxjs": "^6.5.4",
-    "tslib": "^1.9.0",
-    "zone.js": "~0.9.1"
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.803.25",
-    "@angular-devkit/build-ng-packagr": "^0.803.25",
-    "@angular/cli": "^8.3.25",
-    "@angular/compiler-cli": "^8.2.14",
-    "@angular/language-service": "^8.2.14",
+    "@angular-devkit/build-angular": "~0.900.2",
+    "@angular-devkit/build-ng-packagr": "~0.900.2",
+    "@angular/cli": "^9.0.2",
+    "@angular/compiler-cli": "^9.0.1",
+    "@angular/language-service": "^9.0.1",
     "@compodoc/compodoc": "^1.1.10",
     "@types/jasmine": "^3.3.15",
     "@types/jasminewd2": "^2.0.6",
-    "@types/node": "^12.6.8",
-    "codelyzer": "^5.0.1",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^5.1.2",
     "coveralls": "^3.0.5",
     "cpr": "^3.0.1",
     "cross-env": "^5.2.0",
@@ -99,7 +99,7 @@
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
     "lite-server": "^2.5.3",
-    "ng-packagr": "^5.7.1",
+    "ng-packagr": "^9.0.0",
     "prettier": "^1.17.1",
     "pretty-quick": "^1.11.0",
     "protractor": "^5.4.2",
@@ -107,9 +107,8 @@
     "sass-lint": "^1.13.1",
     "snyk": "^1.198.0",
     "sonar-scanner": "^3.0.3",
-    "tsickle": "^0.36.0",
     "tslint": "^5.16.0",
     "typedoc": "^0.14.2",
-    "typescript": "~3.5.3"
+    "typescript": "~3.7.5"
   }
 }

@@ -81,8 +81,9 @@
 | Angular 4  | NOT OFFICIALLY SUPPORTED    |
 | Angular 5  | NOT OFFICIALLY SUPPORTED    |
 | Angular 6  | NOT OFFICIALLY SUPPORTED    |
-| Angular 7  | &gt;= 1.0.0    |
+| Angular 7  | &gt;= 1.0.0                 |
 | Angular 8  | &gt;= 1.0.0                 |
+| Angular 9  | &gt;= 2.0.0                 |
 
 <br>
 
@@ -152,7 +153,7 @@ In this way, [prettier](https://prettier.io/) will run using my configuration an
 
 The MIT License (MIT)
 
-Copyright (c) 2019 Stefano Cappa (Ks89)
+Copyright (c) 2019-2020 Stefano Cappa (Ks89)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
