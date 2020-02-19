@@ -110,6 +110,6 @@
     "tsickle": "^0.36.0",
     "tslint": "^5.16.0",
     "typedoc": "^0.14.2",
-    "typescript": "~3.4.3"
+    "typescript": "~3.5.3"
   }
 }
