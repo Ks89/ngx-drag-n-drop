@@ -30,7 +30,7 @@ class TestComponent {
 class FakeEvent {
   public customObject;
   public customID;
-  public dataTransfer: object = {
+  public dataTransfer: any = {
     setData: (var1, var2) => {
       Object.defineProperty(this, var1, {value: var2});
       console.log('inside fake event set data');
