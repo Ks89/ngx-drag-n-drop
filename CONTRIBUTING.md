@@ -10,11 +10,11 @@ Every time you'll run `npm install` inside an example's folder, you must rebuild
 2. remove all `node_modules` and temp folders with compiled files (if necessary)
 3. `npm install` (from the root of this project)
 4. `npm run clean:all`
-20. `npm run build:all`
-23. `npm test`
-24. `npm run e2e`
+5. `npm run build:all`
+6. `npm test`
+7. `npm run e2e`
 
-# H. Create your pull request
+# B. Create your pull request
 1. **If it is ok, create your pull request specifying all the details**
 
 <br/>
