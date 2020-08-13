@@ -1,5 +1,8 @@
+# 3.0.0
+- upgrade library to angular 10.0.0 **(BREAKING CHANGES)**
+
 # 2.0.0
-- create an ivy library with angular 9.0.0 - not backward compatible!!!
+- upgrade library to angular 9.0.0 **(BREAKING CHANGES)**
 
 # 1.0.1
 - only to fix reame on npmjs.org
