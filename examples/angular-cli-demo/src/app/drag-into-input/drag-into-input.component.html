@@ -1,0 +1,9 @@
+<div class="row">
+  <h2>Drag a div into an input field</h2>
+  <div class="col-md-4">
+    <input type="text" class="drag-input" placeholder="Drag the red box here" [value]="draggedContent" ksDropDirective (dropEvent)="addDropItem($event)">
+  </div>
+  <div class="col-md-8">
+    <div class="draggable" ksDragDirective [draggedItem]="'content to drag'">content to drag</div>
+  </div>
+</div>
