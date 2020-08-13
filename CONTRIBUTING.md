@@ -10,7 +10,7 @@ Every time you'll run `npm install` inside an example's folder, you must rebuild
 2. remove all `node_modules` and temp folders with compiled files (if necessary)
 3. `npm install` (from the root of this project)
 4. `npm run clean:all`
-5. `npm run build:all`
+5. `npm run build:lib`
 6. `npm start`
 7. `npm test`
 8. `npm run e2e`

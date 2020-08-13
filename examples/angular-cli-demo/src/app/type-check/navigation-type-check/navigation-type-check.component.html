@@ -1,6 +1,0 @@
-navigation works!
-<div (releaseDrop)="releaseDrop($event)" (startDrag)="startDrag(item)" *ngFor="let item of itemsToDrop"
-     ksDragDirective [draggedItem]='item' [dragHighlight]="'highlight'"
-     [ngClass]="{'dragItem-round':item.type===0,'dragItem-square':item.type===1}" class="dragItem">
-    <app-generic-box [genericBox]='item'></app-generic-box>
-</div>
