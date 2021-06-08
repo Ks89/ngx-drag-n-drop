@@ -5,27 +5,23 @@
   "license": "MIT",
   "author": "Stefano Cappa",
   "engines": {
-    "node": ">=12.15.0",
-    "npm": ">=6.9.0"
+    "node": ">=14.17.0",
+    "npm": ">=7.16.0"
   },
   "sideEffect": true,
   "homepage": "https://github.com/Ks89/ngx-drag-n-drop",
   "peerDependencies": {
-    "@angular/common": ">=10.0.0",
-    "@angular/core": ">=10.0.0",
-    "rxjs": ">=6.0.0"
+    "@angular/common": ">=12.0.0",
+    "@angular/core": ">=12.0.0",
+    "rxjs": ">=6.6.0"
   },
   "keywords": [
     "ngx-drag-n-drop",
     "ngx-dnd",
     "ngx-drag-and-drop",
-    "angular 4",
-    "angular 5",
-    "angular 6",
-    "angular 7",
-    "angular 8",
-    "angular 9",
     "angular 10",
+    "angular 11",
+    "angular 12",
     "drag and drop",
     "drag n drop",
     "dnd",
@@ -40,6 +36,6 @@
     "url": "https://github.com/Ks89/ngx-drag-n-drop/issues"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": ">=2.1.0"
   }
 }
