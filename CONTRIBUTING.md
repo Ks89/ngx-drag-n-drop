@@ -28,9 +28,10 @@ Every time you'll run `npm install` inside an example's folder, you must rebuild
 3. `cd ../..`
 4. `npm run clean:all`
 5. `npm run build:lib`
-6. `npm publish @ks89/ngx-drag-n-drop`
-7. `git push origin master`
-8. `git push origin vx.x.x`  <-- tag name created by npm version (for instance v1.0.1)
+6. `cd @ks89/ngx-drag-n-drop`
+7. `npm publish`
+8. `git push origin master`
+9. `git push origin vx.x.x`  <-- tag name created by npm version (for instance v1.0.1)
 
 ## Beta and RC releases (@beta)
 1. `cd projects/ks89/ngx-drag-n-drop`
@@ -38,7 +39,8 @@ Every time you'll run `npm install` inside an example's folder, you must rebuild
 3. `cd ../..`
 4. `npm run clean:all`
 5. `npm run build:lib`
-6. `npm publish @ks89/ngx-drag-n-drop --tag beta`
+6. `cd @ks89/ngx-drag-n-drop`
+7. `npm publish --tag beta`
 
 ## Alpha releases (@next)
 1. `cd projects/ks89/ngx-drag-n-drop`
@@ -46,4 +48,5 @@ Every time you'll run `npm install` inside an example's folder, you must rebuild
 3. `cd ../..`
 4. `npm run clean:all`
 5. `npm run build:lib`
-6. `npm publish @ks89/ngx-drag-n-drop --tag next`
+6. `cd @ks89/ngx-drag-n-drop`
+7. `npm publish --tag next`
