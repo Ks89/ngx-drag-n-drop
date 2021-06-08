@@ -1,21 +1,40 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@ks89/ngx-drag-n-drop": [
+        "dist/ks89/ngx-drag-n-drop"
+      ],
+      "@ks89/ngx-drag-n-drop/*": [
+        "dist/ks89/ngx-drag-n-drop/*"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
-    "module": "es2020",
-    "moduleResolution": "node",
     "experimentalDecorators": true,
+    "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
-    "typeRoots": ["node_modules/@types"],
-    "lib": ["es2018", "dom"],
-    "paths": {
-      "@ks89/ngx-drag-n-drop": ["dist/ks89/ngx-drag-n-drop"],
-      "@ks89/ngx-drag-n-drop/*": ["dist/ks89/ngx-drag-n-drop/*"]
+    "target": "es2017",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "angularCompilerOptions": {
+      "enableI18nLegacyMessageIdFormat": false,
+      "strictInjectionParameters": true,
+      "strictInputAccessModifiers": true,
+      "strictTemplates": true
     }
   }
 }
