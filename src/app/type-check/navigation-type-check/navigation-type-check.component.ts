@@ -8,7 +8,7 @@ import { DragTypePayload } from '../../drag-payload';
   styleUrls: ['./navigation-type-check.component.scss']
 })
 export class NavigationTypeCheckComponent {
-  @Input() dropItemType: TypeCheckEnum;
+  @Input() dropItemType: TypeCheckEnum | undefined;
 
   itemsToDrop: DragTypePayload[] = [
     {
@@ -23,7 +23,7 @@ export class NavigationTypeCheckComponent {
     }
   ];
 
-  releaseDrop(event) {
+  releaseDrop(event: any) {
     const index: number = this.itemsToDrop.indexOf(event);
     if (index >= 0) {
       setTimeout(() => {
@@ -32,11 +32,11 @@ export class NavigationTypeCheckComponent {
     }
   }
 
-  startDrag(item) {
+  startDrag(item: any) {
     console.log('Begining to drag item: ' + item);
   }
 
-  private checkType(event, index) {
+  private checkType(event: any, index: number) {
     if (event.type === this.dropItemType) {
       this.itemsToDrop.splice(index, 1);
     }

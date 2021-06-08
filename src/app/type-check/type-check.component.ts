@@ -8,7 +8,7 @@ import { TypeCheckEnum } from './type-check-enum';
 })
 export class TypeCheckComponent {
   title = 'Draggable Items that check to see if they are allowed to drop in drop areas';
-  dropItemType: TypeCheckEnum;
+  dropItemType: TypeCheckEnum | undefined;
 
   dropItemTypeCheck(event: TypeCheckEnum) {
     this.dropItemType = event;

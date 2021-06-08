@@ -6,7 +6,7 @@ import { DragDropDirectiveService } from './drag-drop-directive.service';
   selector: '[ksDropDirective]'
 })
 export class DropDirective {
-  @Input() dropHighlight: string;
+  @Input() dropHighlight: string | undefined;
 
   @Output() dropEvent: EventEmitter<any> = new EventEmitter();
   @Output() dragenterEvent: EventEmitter<any> = new EventEmitter();

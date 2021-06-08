@@ -58,9 +58,8 @@
 
 ## :boom: Features :boom:
 - Angular Module to import this library
-- works with both JIT and AOT compilers
 - supports all **recommended Angular Compiler Options**
-- compliant to Angular Package Format v10 specifications
+- compliant to Angular Package Format v12 specifications
 - **use [Semantic versioning 2.0.0](http://semver.org/)** also known as 'semver'
 - official example with `angular-cli`
 
@@ -81,10 +80,12 @@
 | Angular 4   | NOT OFFICIALLY SUPPORTED    |
 | Angular 5   | NOT OFFICIALLY SUPPORTED    |
 | Angular 6   | NOT OFFICIALLY SUPPORTED    |
-| Angular 7   | &gt;= 1.0.0                 |
-| Angular 8   | &gt;= 1.0.0                 |
-| Angular 9   | &gt;= 2.0.0                 |
-| Angular 10  | &gt;= 3.0.0                 |
+| Angular 7   | &gt;= 1.0.0 and &lt;2.0.0   |
+| Angular 8   | &gt;= 1.0.0 and &lt;2.0.0   |
+| Angular 9   | &gt;= 2.0.0 and &lt;3.0.0   |
+| Angular 10  | &gt;= 3.0.0 and &lt;4.0.0   |
+| Angular 11  | &gt;= 3.0.0 and &lt;4.0.0   |
+| Angular 12  | &gt;= 4.0.0                 |
 
 <br>
 
@@ -135,6 +136,7 @@ Both accept inputs for CSS class highlighting. If you do not pass a string then 
 
 ## :fire: News :fire:
 
+- 08/06/2021 - 4.0.0 - @ks89/ngx-drag-n-drop - [HERE](https://github.com/Ks89/ngx-drag-n-drop/releases)
 - 13/08/2019 - 3.0.0 - @ks89/ngx-drag-n-drop - [HERE](https://github.com/Ks89/ngx-drag-n-drop/releases)
 - 21/02/2019 - 2.0.0 - @ks89/ngx-drag-n-drop - [HERE](https://github.com/Ks89/ngx-drag-n-drop/releases)
 - 24/07/2019 - 1.0.1 - @ks89/ngx-drag-n-drop - [HERE](https://github.com/Ks89/ngx-drag-n-drop/releases)

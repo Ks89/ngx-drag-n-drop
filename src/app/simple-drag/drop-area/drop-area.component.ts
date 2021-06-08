@@ -10,11 +10,11 @@ import { DragPayload } from '../../drag-payload';
 export class DropAreaComponent {
   itemsDropped: DragPayload[] = [];
 
-  addDropItem(event) {
+  addDropItem(event: any) {
     this.itemsDropped.push(event);
   }
 
-  alertMouseEvent(event) {
+  alertMouseEvent(event: any) {
     console.log(event);
   }
 

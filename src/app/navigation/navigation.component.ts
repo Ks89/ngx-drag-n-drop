@@ -23,7 +23,7 @@ export class NavigationComponent {
     } as DragPayload
   ];
 
-  releaseDrop(event) {
+  releaseDrop(event: any) {
     const index: number = this.itemsToDrop.indexOf(event);
     if (index >= 0) {
       this.itemsToDrop.splice(index, 1);

@@ -1,4 +1,4 @@
-Sometimes, shy developers have really good ideas. So don't be shy and open an issue! :)
+Sometimes, shy developers have wonderful ideas. So don't be shy and open an issue! :)
 
 If you want to help me, modify the source code, but **before to create a pull request, follow these steps**
 
@@ -13,7 +13,6 @@ Every time you'll run `npm install` inside an example's folder, you must rebuild
 5. `npm run build:lib`
 6. `npm start`
 7. `npm test`
-8. `npm run e2e`
 
 # B. Create your pull request
 1. **If it is ok, create your pull request specifying all the details**

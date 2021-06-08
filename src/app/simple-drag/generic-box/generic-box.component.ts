@@ -7,7 +7,7 @@ import { DragPayload } from '../../drag-payload';
   templateUrl: './generic-box.component.html'
 })
 export class GenericBoxComponent implements OnInit {
-  @Input() genericBox: DragPayload;
+  @Input() genericBox: DragPayload | undefined;
 
   ngOnInit() {
     if (!this.genericBox) {

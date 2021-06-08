@@ -20,7 +20,7 @@ export class DropAreaTypeCheckComponent {
   constructor() {
   }
 
-  addDropItem(event, type) {
+  addDropItem(event: any, type: TypeCheckEnum) {
     if (type === TypeCheckEnum.Square) {
       if (event.type === TypeCheckEnum.Square) {
         this.itemsDroppedSquare.push(event);
@@ -41,7 +41,7 @@ export class DropAreaTypeCheckComponent {
     }
   }
 
-  dragEnter(event, type) {
+  dragEnter(event: any, type: TypeCheckEnum) {
     if (event.type !== type) {
       this.highlight[type] = 'badHighlight';
     } else {

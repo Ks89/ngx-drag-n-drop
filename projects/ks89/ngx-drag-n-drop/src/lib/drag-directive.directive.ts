@@ -7,12 +7,12 @@ import { Subscription } from 'rxjs';
 })
 export class DragDirective implements OnDestroy {
   @Input() draggedItem: any;
-  @Input() dragHighlight: string; // cssHighlight
+  @Input() dragHighlight: string | undefined; // cssHighlight
   @Output() releaseDrop: EventEmitter<any> = new EventEmitter();
   @Output() startDrag: EventEmitter<any> = new EventEmitter();
 
   private highlighted = false;
-  private dropSubscription: Subscription;
+  private dropSubscription: Subscription | undefined;
 
   constructor(
     private renderer: Renderer2,
@@ -56,9 +56,11 @@ export class DragDirective implements OnDestroy {
     }
   }
 
-  private emitDraggedItem(item) {
+  private emitDraggedItem(item: any) {
     this.releaseDrop.emit(item);
-    this.dropSubscription.unsubscribe();
+    if (this.dropSubscription) {
+      this.dropSubscription.unsubscribe();
+    }
   }
 
   private highlight() {
