@@ -26,7 +26,7 @@
     "build:main:dev": "ng build --configuration development",
     "build:main:prod": "ng build --configuration production",
     "clean": "npm run clean:main",
-    "clean:main": "npm run clean:dist && npm run clean:coverage && npm run clean:docs",
+    "clean:main": "npm run clean:dist && npm run clean:coverage",
     "clean:dist": "rimraf @ks89 dist",
     "clean:coverage": "rimraf coverage",
     "clean:all": "npm run clean:main",
