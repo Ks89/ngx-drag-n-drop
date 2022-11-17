@@ -142,7 +142,6 @@
       }
     }
   },
-  "defaultProject": "ngx-drag-n-drop",
   "cli": {
     "analytics": false
   }
