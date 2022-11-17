@@ -1,3 +1,6 @@
+# 6.0.0
+- upgrade library to angular 15.0.0 **(BREAKING CHANGES)**
+
 # 5.0.0
 - upgrade library to angular 13.0.0 **(BREAKING CHANGES)**
 

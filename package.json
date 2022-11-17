@@ -1,6 +1,6 @@
 {
   "name": "@ks89/ngx-drag-n-drop",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "Drag-n-Drop library for Angular",
   "license": "MIT",
   "author": "Stefano Cappa",
@@ -10,8 +10,8 @@
     "url": "git+https://github.com/Ks89/ngx-drag-n-drop.git"
   },
   "engines": {
-    "node": ">=16.3.0",
-    "npm": ">=7.16.0"
+    "node": ">=18.12.1",
+    "npm": ">=8.19.2"
   },
   "scripts": {
     "ng": "ng",
@@ -43,39 +43,39 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^14.2.11",
-    "@angular/common": "^14.2.11",
-    "@angular/compiler": "^14.2.11",
-    "@angular/core": "^14.2.11",
-    "@angular/forms": "^14.2.11",
-    "@angular/platform-browser": "^14.2.11",
-    "@angular/platform-browser-dynamic": "^14.2.11",
-    "@angular/router": "^14.2.11",
-    "rxjs": "~7.4.0",
+    "@angular/animations": "^15.0.0",
+    "@angular/common": "^15.0.0",
+    "@angular/compiler": "^15.0.0",
+    "@angular/core": "^15.0.0",
+    "@angular/forms": "^15.0.0",
+    "@angular/platform-browser": "^15.0.0",
+    "@angular/platform-browser-dynamic": "^15.0.0",
+    "@angular/router": "^15.0.0",
+    "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.12.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^14.2.9",
-    "@angular/cli": "^14.2.9",
-    "@angular/compiler-cli": "^14.2.11",
-    "@types/jasmine": "~3.10.0",
-    "@types/node": "^16.11.6",
+    "@angular-devkit/build-angular": "^15.0.0",
+    "@angular/cli": "^15.0.0",
+    "@angular/compiler-cli": "^15.0.0",
+    "@types/jasmine": "~4.3.0",
+    "@types/node": "^18.11.9",
     "cpr": "^3.0.1",
     "cross-env": "^7.0.3",
     "husky": "^7.0.1",
-    "jasmine-core": "~3.10.0",
-    "karma": "~6.3.0",
+    "jasmine-core": "~4.5.0",
+    "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage": "~2.0.3",
-    "karma-jasmine": "~4.0.0",
-    "karma-jasmine-html-reporter": "~1.7.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
     "lite-server": "^2.6.1",
-    "ng-packagr": "^14.2.2",
+    "ng-packagr": "^15.0.0",
     "prettier": "^2.3.2",
     "pretty-quick": "^3.1.1",
     "rimraf": "^3.0.2",
     "sass-lint": "^1.13.1",
-    "typescript": "~4.8.4"
+    "typescript": "~4.8.2"
   }
 }
