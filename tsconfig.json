@@ -29,8 +29,7 @@
     ],
     "typeRoots": [
       "node_modules/@types"
-    ],
-    "useDefineForClassFields": false
+    ]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
