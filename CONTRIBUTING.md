@@ -6,7 +6,7 @@ If you want to help me, modify the source code, but **before to create a pull re
 Every time you'll run `npm install` inside an example's folder, you must rebuild all with `npm run build:all`
 
 # A. Cleanup and initialization
-1. `npm install -g lite-server @angular/cli@latest`
+1. `npm install -g @angular/cli@latest`
 2. remove all `node_modules` and temp folders with compiled files (if necessary)
 3. `npm install` (from the root of this project)
 4. `npm run clean:all`
