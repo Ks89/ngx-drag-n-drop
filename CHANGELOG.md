@@ -1,3 +1,6 @@
+# 8.0.0
+- upgrade library to angular 18.0.0 **(BREAKING CHANGES)**
+
 # 7.0.1
 - upgrade library to angular 16.0.0 **(BREAKING CHANGES)**
 
