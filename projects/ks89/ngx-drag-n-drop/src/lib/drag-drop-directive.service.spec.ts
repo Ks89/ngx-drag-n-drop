@@ -1,4 +1,4 @@
-import { async, inject, TestBed } from '@angular/core/testing';
+import { fakeAsync, inject, TestBed } from '@angular/core/testing';
 
 import { DragDropDirectiveService } from './drag-drop-directive.service';
 
@@ -8,7 +8,7 @@ describe('DragDropDirectiveService without testbed', () => {
     service = new DragDropDirectiveService();
   });
 
-  it('should set an item and return it as an observable (async)', async(() => {
+  it('should set an item and return it as an observable (async)', fakeAsync(() => {
     const item = {name: 'test item'};
     service.setDropItem(item);
     service.getDropItem().subscribe(value => {

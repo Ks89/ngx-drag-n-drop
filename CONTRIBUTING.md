@@ -12,6 +12,7 @@ Every time you'll run `npm install` inside an example's folder, you must rebuild
 4. `npm run clean:all`
 5. `npm run build:lib`
 6. `npm start`
+7. `npm test`
 
 # B. Create your pull request
 1. **If it is ok, create your pull request specifying all the details**
