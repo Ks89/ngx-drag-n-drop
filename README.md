@@ -85,13 +85,16 @@
 | Angular 9  | &gt;= 2.0.0 and &lt;3.0.0 |
 | Angular 10 | &gt;= 3.0.0 and &lt;4.0.0 |
 | Angular 11 | &gt;= 3.0.0 and &lt;4.0.0 |
-| Angular 12 |        &gt;= 4.0.0        |
-| Angular 13 |        &gt;= 5.0.0        |
-| Angular 14 |        &gt;= 5.0.0        |
-| Angular 15 |        &gt;= 6.0.1        |
-| Angular 16 |        &gt;= 7.0.0        |
-| Angular 17 |        &gt;= 7.0.0        |
-| Angular 18 |        &gt;= 8.0.0        |
+| Angular 12 |          = 4.0.0          |
+| Angular 13 |          = 5.0.0          |
+| Angular 14 |          = 5.0.0          |
+| Angular 15 |          = 6.0.1          |
+| Angular 16 |          = 7.0.1          |
+| Angular 17 |          = 7.0.1          |
+| Angular 18 |          = 8.0.0          |
+| Angular 19 |          = 8.0.0          |
+| Angular 20 |          = 8.0.0          |
+| Angular 21 |        &gt;= 9.0.0        |
 
 <br>
 
@@ -142,6 +145,7 @@ Both accept inputs for CSS class highlighting. If you do not pass a string then 
 
 ## :fire: News :fire:
 
+- 26/12/2025 - 9.0.0 - @ks89/ngx-drag-n-drop - [HERE](https://github.com/Ks89/ngx-drag-n-drop/releases)
 - 31/05/2024 - 8.0.0 - @ks89/ngx-drag-n-drop - [HERE](https://github.com/Ks89/ngx-drag-n-drop/releases)
 - 16/08/2023 - 7.0.1 - @ks89/ngx-drag-n-drop - [HERE](https://github.com/Ks89/ngx-drag-n-drop/releases)
 - 17/11/2022 - 6.0.1 - @ks89/ngx-drag-n-drop - [HERE](https://github.com/Ks89/ngx-drag-n-drop/releases)
@@ -168,7 +172,7 @@ In this way, [prettier](https://prettier.io/) will run using my configuration an
 
 The MIT License (MIT)
 
-Copyright (c) 2019-2024 Stefano Cappa (Ks89)
+Copyright (c) 2019-2026 Stefano Cappa (Ks89)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
