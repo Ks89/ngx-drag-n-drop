@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-simple-drag',
-  template: `
+    selector: 'app-simple-drag',
+    template: `
   <div class="row">
     <h2>Very Basic</h2>
     <div class="col-md-4">
@@ -14,7 +14,8 @@ import { Component } from '@angular/core';
       <app-drop-area></app-drop-area>
     </div>
   </div>
-  `
+  `,
+    standalone: false
 })
 export class SimpleDragComponent {
   title = 'Simple Draggable Boxes for Angular';

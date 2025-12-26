@@ -3,8 +3,9 @@ import { Component, Input, OnInit } from '@angular/core';
 import { DragPayload } from '../../drag-payload';
 
 @Component({
-  selector: 'app-generic-box',
-  templateUrl: './generic-box.component.html'
+    selector: 'app-generic-box',
+    templateUrl: './generic-box.component.html',
+    standalone: false
 })
 export class GenericBoxComponent implements OnInit {
   @Input() genericBox: DragPayload | undefined;

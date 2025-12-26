@@ -3,8 +3,9 @@ import { Component } from '@angular/core';
 import { TypeCheckEnum } from './type-check-enum';
 
 @Component({
-  selector: 'app-type-check',
-  templateUrl: './type-check.component.html'
+    selector: 'app-type-check',
+    templateUrl: './type-check.component.html',
+    standalone: false
 })
 export class TypeCheckComponent {
   title = 'Draggable Items that check to see if they are allowed to drop in drop areas';

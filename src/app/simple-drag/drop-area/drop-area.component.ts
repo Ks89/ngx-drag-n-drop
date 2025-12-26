@@ -3,9 +3,10 @@ import { Component } from '@angular/core';
 import { DragPayload } from '../../drag-payload';
 
 @Component({
-  selector: 'app-drop-area',
-  templateUrl: './drop-area.component.html',
-  styleUrls: ['./drop-area.component.scss']
+    selector: 'app-drop-area',
+    templateUrl: './drop-area.component.html',
+    styleUrls: ['./drop-area.component.scss'],
+    standalone: false
 })
 export class DropAreaComponent {
   itemsDropped: DragPayload[] = [];

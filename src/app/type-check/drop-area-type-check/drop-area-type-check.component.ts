@@ -4,9 +4,10 @@ import { TypeCheckEnum } from '../type-check-enum';
 import { DragTypePayload } from '../../drag-payload';
 
 @Component({
-  selector: 'app-drop-area-type-check',
-  templateUrl: './drop-area-type-check.component.html',
-  styleUrls: ['./drop-area-type-check.component.scss']
+    selector: 'app-drop-area-type-check',
+    templateUrl: './drop-area-type-check.component.html',
+    styleUrls: ['./drop-area-type-check.component.scss'],
+    standalone: false
 })
 export class DropAreaTypeCheckComponent {
   @Output() droppedItemType: EventEmitter<TypeCheckEnum> = new EventEmitter<TypeCheckEnum>();

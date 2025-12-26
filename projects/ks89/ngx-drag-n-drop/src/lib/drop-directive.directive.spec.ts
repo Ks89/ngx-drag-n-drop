@@ -6,14 +6,14 @@ import { DragDropDirectiveService } from './drag-drop-directive.service';
 
 // test component to test highlighting
 @Component({
-  template: `
+    template: `
       <div ksDropDirective (dropEvent)="testEvent($event)" (dragenterEvent)="testEvent($event)" (dragenterEvent)="testEvent($event)"
            class="droppable" [dropHighlight]="'highlight'">
           <span>{{item.name}}</span>
           <p>{{testMsg}}</p>
       </div>
-  `
-
+  `,
+    standalone: false
 })
 class TestComponent {
   public item: any = {name: 'test name'};

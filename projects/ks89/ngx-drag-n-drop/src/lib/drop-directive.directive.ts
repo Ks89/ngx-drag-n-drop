@@ -3,7 +3,8 @@ import { Directive, ElementRef, EventEmitter, HostListener, Input, Output, Rende
 import { DragDropDirectiveService } from './drag-drop-directive.service';
 
 @Directive({
-  selector: '[ksDropDirective]'
+    selector: '[ksDropDirective]',
+    standalone: false
 })
 export class DropDirective {
   @Input() dropHighlight: string | undefined;

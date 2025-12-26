@@ -3,9 +3,10 @@ import { TypeCheckEnum } from '../type-check-enum';
 import { DragTypePayload } from '../../drag-payload';
 
 @Component({
-  selector: 'app-navigation-type-check',
-  templateUrl: './navigation-type-check.component.html',
-  styleUrls: ['./navigation-type-check.component.scss']
+    selector: 'app-navigation-type-check',
+    templateUrl: './navigation-type-check.component.html',
+    styleUrls: ['./navigation-type-check.component.scss'],
+    standalone: false
 })
 export class NavigationTypeCheckComponent {
   @Input() dropItemType: TypeCheckEnum | undefined;

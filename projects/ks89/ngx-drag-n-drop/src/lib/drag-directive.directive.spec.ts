@@ -7,12 +7,13 @@ import { Subject } from 'rxjs';
 
 // test component to test highlighting
 @Component({
-  template: `
+    template: `
       <div id="itemDiv" ksDragDirective [draggedItem]='item' [dragHighlight]="'highlight'" (releaseDrop)="testEvent($event)"
            (startDrag)="testEvent($event)">
           <span id="itemName">{{item.name}}</span>
           <p>{{testMsg}}</p>
-      </div>`
+      </div>`,
+    standalone: false
 })
 class TestComponent {
   public item: any = {name: 'test name'};
