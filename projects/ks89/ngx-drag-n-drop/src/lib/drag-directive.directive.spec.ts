@@ -55,7 +55,7 @@ describe('DragDirective', () => {
     itemDiv = fixture.debugElement.query(By.directive(DragDirective));
     directInstance = itemDiv.injector.get(DragDirective);
     // dragService = directInstance.dragDropDirectiveService;
-    dragService = TestBed.get(DragDropDirectiveService);
+    dragService = TestBed.inject(DragDropDirectiveService);
     fixture.detectChanges();
     comp.testMsg = '';
     spyOn(dragService, 'setDragItem');
