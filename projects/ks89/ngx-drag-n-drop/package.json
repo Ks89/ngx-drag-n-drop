@@ -1,6 +1,6 @@
 {
   "name": "@ks89/ngx-drag-n-drop",
-  "version": "9.0.0",
+  "version": "10.0.0",
   "description": "Drag and drop library for Angular",
   "license": "MIT",
   "author": "Stefano Cappa",
@@ -13,8 +13,8 @@
     "tslib": ">=2.3.0"
   },
   "peerDependencies": {
-    "@angular/common": ">=21.0.0",
-    "@angular/core": ">=21.0.0",
+    "@angular/common": ">=22.0.0",
+    "@angular/core": ">=22.0.0",
     "rxjs": ">=7.8.0"
   },
   "keywords": [

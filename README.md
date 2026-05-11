@@ -94,7 +94,8 @@
 | Angular 18 |          = 8.0.0          |
 | Angular 19 |          = 8.0.0          |
 | Angular 20 |          = 8.0.0          |
-| Angular 21 |        &gt;= 9.0.0        |
+| Angular 21 |          = 9.0.0          |
+| Angular 22 |       &gt;= 10.0.0        |
 
 <br>
 
@@ -145,6 +146,7 @@ Both accept inputs for CSS class highlighting. If you do not pass a string then 
 
 ## :fire: News :fire:
 
+- ??/??/2026 - 10.0.0 - @ks89/ngx-drag-n-drop - [HERE](https://github.com/Ks89/ngx-drag-n-drop/releases)
 - 26/12/2025 - 9.0.0 - @ks89/ngx-drag-n-drop - [HERE](https://github.com/Ks89/ngx-drag-n-drop/releases)
 - 31/05/2024 - 8.0.0 - @ks89/ngx-drag-n-drop - [HERE](https://github.com/Ks89/ngx-drag-n-drop/releases)
 - 16/08/2023 - 7.0.1 - @ks89/ngx-drag-n-drop - [HERE](https://github.com/Ks89/ngx-drag-n-drop/releases)
